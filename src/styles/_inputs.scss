@@ -1,0 +1,93 @@
+form {
+  position: relative;
+}
+
+select, textarea, input, button {
+  background-color: $white;
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+  color: $bg-dark;
+  font: inherit;
+
+  &::placeholder {
+    color: $bg-lite;
+    opacity: 1;
+  }
+
+  &:focus:not(button) {
+    background-color: $secondary;
+    color: $white;
+    outline: none;
+
+    &::placeholder {
+      color: $white;
+    }  
+  }
+}
+
+select {
+  appearance: none;
+  background: $white no-repeat right 10px center / 18px url(./media/select-bg-dark.svg);
+  padding-right: 35px;
+
+  &:focus {
+    background-image: url(./media/select-white.svg);
+  }
+}
+
+textarea {
+  resize: none;
+  height: 240px;
+}
+
+button {
+  background-color: $primary;
+  width: auto;
+  white-space: normal;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary;
+    color: $white;
+  }
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.admin-input {
+  max-width: 240px;
+  margin: 1rem auto;
+
+  & + .error {
+    text-align: center;
+  }
+}
+
+.contact-input {
+  max-width: 480px;
+  margin: 1rem auto;
+
+  & + .error {
+    text-align: center;
+  }
+}
+
+.cms-input {
+  max-width: 240px;
+}
+
+.remove-option {
+  background-color: $white;
+  color: $red;
+
+  &:hover {
+    background-color: $primary;
+    color: $bg-dark;
+  }
+}

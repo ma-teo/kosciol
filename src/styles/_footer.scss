@@ -1,0 +1,44 @@
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contact-link {
+  display: flex;
+  margin-bottom: 1rem;
+
+  &::before {
+    content: '';
+    background-color: $white;
+    mask: no-repeat center;
+    width: 18px;
+    margin-right: 7.5px;
+    }
+
+  &:hover {
+    &::before {
+      background-color: $primary;
+    }
+  }
+}
+
+.email-icon::before { mask-image: url(./media/email.svg); }
+.facebook-icon::before { mask-image: url(./media/facebook.svg); }
+.messenger-icon::before { mask-image: url(./media/messenger.svg); }
+.youtube-icon::before { mask-image: url(./media/youtube.svg); }
+.link-icon::before { mask-image: url(./media/link.svg); }
+
+.facebook {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 1rem;
+  border: none;
+}
+
+.body-footer {
+  background-color: $bg-dark;
+  padding: 15px;
+  font-size: 1rem;
+  text-align: center;
+}

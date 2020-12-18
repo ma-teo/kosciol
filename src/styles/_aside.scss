@@ -1,0 +1,29 @@
+.aside-list {
+  max-width: 360px;
+  margin: 1rem auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cms-list {
+  max-width: none;
+}
+
+.aside-list-item {
+  background-color: $white;
+  display: block;
+  padding: 12.5px 20px;
+  border-bottom: 1px solid $border;
+  color: $bg-dark;
+
+  &:hover {
+    background-color: $primary;
+    color: $bg-dark;
+  }
+
+  &.active {
+    background-color: $bg-dark;
+    color: $white;
+    pointer-events: none;
+  }
+}

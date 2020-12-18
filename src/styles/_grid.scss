@@ -1,0 +1,41 @@
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 0 15px;
+
+  @media #{$min-sm} {
+    max-width: 650px;
+  }
+  @media #{$min-md} {
+    max-width: 800px;
+  }
+  @media #{$min-lg} {
+    &.wide {
+      max-width: 1000px;
+    }
+  }
+}
+
+@media #{$min-md} {
+  .row {
+    display: flex;
+    margin: 0 -15px;
+
+    > * {
+      padding: 0 15px;
+    }
+  }
+
+  .col-33 {
+    width: 33.333%;
+  }
+
+  .col-66 {
+    width: 66.667%;
+  }
+
+  .col-auto {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+}

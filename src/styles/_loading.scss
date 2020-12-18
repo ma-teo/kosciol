@@ -1,0 +1,41 @@
+#root {
+  > * {
+    animation: anime 0.5s ease-in-out;
+  }
+
+  > section {
+    &:not(.top) {
+      padding: 1rem 0;
+    }
+
+    &:nth-child(odd) {
+      background-color: $bg-root;
+
+      .spinner-box {
+        background-color: $bg-root;
+      }
+
+      @media #{$min-md} {
+        .section-item {
+          order: -1;
+        }
+      }
+    }
+    &:nth-child(even) {
+      background-color: $bg-lite;
+
+      .spinner-box {
+        background-color: $bg-lite;
+      }
+    }
+  }
+}
+
+@keyframes anime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

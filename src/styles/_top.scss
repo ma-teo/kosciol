@@ -1,0 +1,32 @@
+.top {
+  position: relative;
+  padding: 0;
+
+  h1 {
+    margin: 1rem 0;
+  }
+
+  &.home {
+    .top-section {
+      @media #{$max-md} {
+        background-color: $bg-lite;
+        position: static;
+      }
+    }
+  }
+}
+
+.top-img {
+  width: 100%;
+  height: calc(30vw + 20vh);
+  max-height: 65vw;
+  margin: 0;
+  object-fit: cover;
+}
+
+.top-section {
+  background-color: $bg-transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

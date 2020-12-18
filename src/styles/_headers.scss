@@ -1,0 +1,20 @@
+.section-header {
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.section-item-header {
+  font-size: 1.125em;
+  text-transform: uppercase;
+}
+
+.article-header {
+  font-size: 1.75em;
+  text-align: center;
+
+  @media #{$min-md} {
+    font-size: 2em;
+  }
+}

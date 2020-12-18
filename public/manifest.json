@@ -1,0 +1,26 @@
+{
+  "name": "Kościoły Domowe Wrocław",
+  "short_name": "Kościół",
+  "icons": [
+    {
+      "src": "https://media.kosciolwroclaw.pl/android-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://media.kosciolwroclaw.pl/android-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://media.kosciolwroclaw.pl/android-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#111188",
+  "background_color": "#111188",
+  "display": "standalone"
+}

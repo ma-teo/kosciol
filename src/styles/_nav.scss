@@ -1,0 +1,145 @@
+.nav {
+  background-color: $bg-dark;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+
+  @media #{$min-md} {
+    top: -74px;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  @media #{$min-md} {
+    justify-content: center;
+  }
+}
+
+.navbar-header {
+  display: flex;
+  margin: 5px;
+  padding: 7.5px 10px;
+  font-size: 1.15em;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    background-color: $white;
+    mask: no-repeat center url(./media/dove.svg);
+    width: 24px;
+    min-width: 1em;
+    margin-right: 7.5px;  
+  }
+
+  &:hover {
+    &::before {
+      background-color: $primary;
+    }
+  }
+
+  @media #{$min-md} {
+    padding: 5px;
+    font-size: 2em;
+  }
+}
+
+.navbar-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar-toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;
+  min-height: 45px;
+  margin: 5px;
+  padding: 0;
+  color: $white;
+
+  &, &:hover {
+    background-color: $transparent;
+  }
+
+  @media #{$min-md} {
+    display: none;
+  }
+}
+
+.toggler-icon {
+  position: relative;
+
+  &, &::before, &::after {
+    background-color: $white;
+    width: 25px;
+    height: 4px;
+    border-radius: 2px;
+    transition: transform .3s;
+  }
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+  
+  &::before {
+    top: -9px;
+  }
+  
+  &::after {
+    top: 9px;
+  }
+
+  &.expanded {
+    transform: rotate(-45deg);
+
+    &::before {
+      transform: translateY(9px) rotate(90deg);
+    }
+    
+    &::after {
+      transform: translateY(-9px) rotate(90deg);
+    }  
+  }  
+}
+
+.nav-menu {
+  background-color: $bg-dark;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.1em;
+
+  @media #{$max-md} {
+    position: absolute;
+    width: 100%;
+    will-change: transform;
+    transform-origin: 50% 0;
+    transition: transform .3s;
+
+    &.collapse {
+      transform: scaleY(0);
+    }  
+  }
+
+  @media #{$min-md} {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.nav-link {
+  display: block;
+  margin: 5px;
+  padding: 5px 10px;
+
+  @media #{$min-md} {
+    padding: 7.5px 10px;
+  }
+}
