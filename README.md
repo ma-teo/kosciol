@@ -1,6 +1,6 @@
 # Kościoły Domowe Wrocław
 
-Website written in [React](https://github.com/facebook/react) using [Roar](https://github.com/ma-teo/roar)
+Website written in [React](https://github.com/facebook/react) using [Hwin](https://github.com/ma-teo/hwin)
 
 ## Available Scripts
 

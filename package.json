@@ -14,11 +14,12 @@
     "use-media": "^1.4.0"
   },
   "devDependencies": {
+    "hwin": "^0.1.0",
     "workbox-cli": "^6.0.2"
   },
   "scripts": {
-    "start": "roar start",
-    "build": "roar build && workbox injectManifest workbox-config.js",
+    "start": "hwin start",
+    "build": "hwin build && workbox injectManifest workbox-config.js",
     "serve": "node build/server.js"
   }
 }
