@@ -1,6 +1,7 @@
 module.exports = {
   globDirectory: 'build/public/',
   globPatterns: [
+    '200.html',
     'css/**.css',
     'js/**.js',
     'media/**.*',

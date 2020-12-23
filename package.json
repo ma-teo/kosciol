@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "hwin start",
-    "build": "hwin build && workbox injectManifest workbox-config.js",
+    "build": "hwin build && hwin export && workbox injectManifest workbox-config.js",
     "serve": "node build/server.js"
   }
 }
