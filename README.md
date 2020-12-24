@@ -2,6 +2,10 @@
 
 Website written in [React](https://github.com/facebook/react) using [Hwin](https://github.com/ma-teo/hwin)
 
+## Live version
+
+https://www.kosciolwroclaw.pl
+
 ## Available Scripts
 
 In the project directory, you can run:
