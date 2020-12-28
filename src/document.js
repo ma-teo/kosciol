@@ -15,12 +15,7 @@ const Document = () => {
         <meta name="theme-color" content="#111188" />
         <meta name="author" content="Mateusz Tarasiuk" />
 
-        {data.meta ? <Head /> :
-          <>
-            <meta name="description" content={data.content} />
-            <title>{data.name}</title>
-          </>
-        }
+        <Head />
 
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -35,9 +30,9 @@ const Document = () => {
         {assets.main.css?.toString().split(',').map(css => <link rel="stylesheet" key={css} href={css} />)}
       </head>
       <body>
-        <div id="root">{data.meta && <App />}</div>
+        <div id="root"><App /></div>
 
-        {data.meta && <script id="data" type="application/json" dangerouslySetInnerHTML={{__html: JSON.stringify(data)}} />}
+        <script id="data" type="application/json" dangerouslySetInnerHTML={{__html: JSON.stringify(data)}} />
         <script src={`https://www.google.com/recaptcha/api.js?render=${siteKey}`} />
         {assets.main.js?.toString().split(',').map(js => <script key={js} src={js} />)}
       </body>
