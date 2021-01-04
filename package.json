@@ -13,7 +13,7 @@
     "use-media": "^1.4.0"
   },
   "devDependencies": {
-    "hwin": "^0.1.8"
+    "hwin": "^0.1.9"
   },
   "scripts": {
     "start": "hwin start",
