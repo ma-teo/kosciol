@@ -1,4 +1,3 @@
-import 'regenerator-runtime/runtime'
 import { useState, useEffect, StrictMode } from 'react'
 import { hydrate } from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
@@ -38,7 +37,7 @@ const Root = () => {
 
 hydrate(<Root />, document.getElementById('root'))
 
-if(module.hot) {
+if (module.hot) {
   module.hot.accept()
 }
 

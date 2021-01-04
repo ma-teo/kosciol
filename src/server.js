@@ -1,4 +1,3 @@
-import 'regenerator-runtime/runtime'
 import express from 'express'
 import axios from 'axios'
 import { useState, StrictMode } from 'react'
