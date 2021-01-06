@@ -26,15 +26,14 @@ const Document = () => {
         <link rel="mask-icon" href={`${mediaUrl}/pinned-tab-icon.svg`} color="#111188" />
         <link rel="manifest" href="/manifest.json" />
 
+        <script src={`https://www.google.com/recaptcha/api.js?render=${siteKey}`} defer={true} />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap&subset=latin-ext" />
+        {assets.main.js?.toString().split(',').map(js => <script key={js} src={js} defer={true} />)}
         {assets.main.css?.toString().split(',').map(css => <link rel="stylesheet" key={css} href={css} />)}
       </head>
       <body>
         <div id="root"><App /></div>
-
         <script id="data" type="application/json" dangerouslySetInnerHTML={{__html: JSON.stringify(data)}} />
-        <script src={`https://www.google.com/recaptcha/api.js?render=${siteKey}`} />
-        {assets.main.js?.toString().split(',').map(js => <script key={js} src={js} />)}
       </body>
     </html>
   )

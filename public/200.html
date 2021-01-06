@@ -17,10 +17,10 @@
   <link rel="mask-icon" href="<%= process.env.MEDIA_URL %>/pinned-tab-icon.svg" color="#111188">
   <link rel="manifest" href="/manifest.json">
 
+  <script src="https://www.google.com/recaptcha/api.js?render=<%= process.env.RECAPTCHA_SITE_KEY %>" defer></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap&subset=latin-ext">
 </head>
 <body>
   <div id="root"></div>
-  <script src="https://www.google.com/recaptcha/api.js?render=<%= process.env.RECAPTCHA_SITE_KEY %>"></script>
 </body>
 </html>
