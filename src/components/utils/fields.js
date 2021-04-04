@@ -79,7 +79,7 @@ const TextEditor = props => (
       placeholder: props.label,
     }}
     onEditorChange={content => props.handleChange(props.name, content)}
-    tinymceScriptSrc="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.6.2/tinymce.min.js"
+    tinymceScriptSrc="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.7.1/tinymce.min.js"
   />
 )
 
