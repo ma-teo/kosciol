@@ -12,7 +12,7 @@ const Top = () => {
   useEffect(() => observer.observe(imgRef.current), [])
 
   return (
-    <section className={`top${site.slug === 'home' ? ' home' : ''}`}>
+    <section className="top">
       <picture ref={imgRef}>
         <source media="(max-width: 640px)" data-srcset={`${mediaUrl}/640/${site.image}`} />
         <source media="(max-width: 1280px)" data-srcset={`${mediaUrl}/1280/${site.image}`} />
@@ -25,7 +25,7 @@ const Top = () => {
           <img className="top-img" loading="lazy" src={`${mediaUrl}/1920/${site.image}`} alt="" />
         </picture>
       </noscript>
-      <section className="top-section">
+      <section className={`top-section${site.slug === 'home' ? ' home' : ''}`}>
         <div className={`container${site.slug === 'home' ? '' : ' wide'}`}>
           {
             art ? <h1 className="article-header">{site.name}</h1> :

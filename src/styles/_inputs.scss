@@ -18,10 +18,13 @@ select, textarea, input, button {
     opacity: 1;
   }
 
-  &:focus:not(button) {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
     background-color: $secondary;
     color: $white;
-    outline: none;
 
     &::placeholder {
       color: $white;

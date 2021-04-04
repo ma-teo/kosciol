@@ -14,7 +14,11 @@
   padding: 10px 15px;
   font-size: 1.1em;
 
-  &:hover {
+  &:focus {
+    outline: none;
+  }
+
+  &:hover, &:focus-visible {
     background-color: $secondary;
     color: $white;
   }

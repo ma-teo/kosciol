@@ -96,7 +96,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <footer className="body-footer" dangerouslySetInnerHTML={{__html: `${new Date().getFullYear()} &copy; ${meta.name}`}} />
+      <footer className="footer" dangerouslySetInnerHTML={{__html: `${new Date().getFullYear()} &copy; ${meta.name}`}} />
     </>
   )
 }

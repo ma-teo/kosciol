@@ -1,18 +1,8 @@
 .top {
   position: relative;
-  padding: 0;
 
   h1 {
     margin: 1rem 0;
-  }
-
-  &.home {
-    .top-section {
-      @media #{$max-md} {
-        background-color: $bg-lite;
-        position: static;
-      }
-    }
   }
 }
 
@@ -29,4 +19,11 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+
+  &.home {
+    @media #{$max-md} {
+      background-color: $bg-lite;
+      position: static;
+    }
+  }
 }

@@ -5,7 +5,7 @@
 }
 
 .contact-link {
-  display: flex;
+  display: inline-flex;
   margin-bottom: 1rem;
 
   &::before {
@@ -14,7 +14,7 @@
     mask: no-repeat center;
     width: 18px;
     margin-right: 7.5px;
-    }
+  }
 
   &:hover {
     &::before {
@@ -36,7 +36,7 @@
   border: none;
 }
 
-.body-footer {
+.footer {
   background-color: $bg-dark;
   padding: 15px;
   font-size: 1rem;
