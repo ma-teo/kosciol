@@ -2,7 +2,7 @@
   "name": "kosciol",
   "version": "1.0.0",
   "dependencies": {
-    "@tinymce/tinymce-react": "^3.12.2",
+    "@tinymce/tinymce-react": "^3.12.6",
     "axios": "^0.21.1",
     "express": "^4.17.1",
     "history": "^5.0.0",
@@ -13,7 +13,7 @@
     "use-media": "^1.4.0"
   },
   "devDependencies": {
-    "hwin": "^0.1.18"
+    "hwin": "^0.1.19"
   },
   "scripts": {
     "start": "hwin start",
